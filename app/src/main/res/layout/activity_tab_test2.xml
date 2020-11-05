@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    tools:context=".TabActivityTest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_dog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A1FFEC"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dog"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBA1FF"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_rabbit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFA1E8"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rabbit"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_horse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F7FDA7"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/horse"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</TabHost>
